@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Epilogue';
+  src: local('Play-Regular'), url('../../src/assets/fonts/Epilogue-Regular.ttf');
+}
+
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4 {
+  font-family: 'Epilogue' !important;
+}
+
+.text-h1 {
+  font-size: 60px !important;
+  font-weight: 400 !important;
+  line-height: 80px !important;
+}
+
+.text-h2 {
+  font-size: 48px !important;
+  font-weight: 400 !important;
+  line-height: 60px !important;
+}
+
+.text-h3 {
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  line-height: 40px !important;
+}
+
+.text-h4 {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+}
