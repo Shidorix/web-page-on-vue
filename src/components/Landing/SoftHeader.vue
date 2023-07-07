@@ -1,18 +1,39 @@
 <template>
-  <div class="row items-center justify-around no-wrap fit">
+  <div class="row items-center justify-around no-wrap fit q-pt-md headerLayout" style="color: white;">
     <div class="row items-center">
       <img src="../../assets/logos/logo.svg" alt="" />
-      <p class="q-pl-md text-h1">DanIso</p>
+      <p class="q-pl-md text-h4">DanIso</p>
     </div>
 
     <div class="col-6 row justify-center">
-      <p class="q-px-md">About</p>
-      <p class="q-px-md">Services</p>
-      <p class="q-px-md">Pricing</p>
+      <a class="q-px-xl text-subtitle2">About</a>
+      <a class="q-px-xl text-subtitle2">Services</a>
+      <a class="q-px-xl text-subtitle2">Pricing</a>
     </div>
 
     <div>
-      <q-btn outline style="color: goldenrod" label="LOGIN" />
+      <q-btn
+        class="btn"
+        outline
+        style="color: rgb(255, 255, 255)"
+        label="LOGIN"
+      />
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+.headerLayout {
+  background-color: #6c9aa9;
+}
+
+.btn {
+  width: 200px;
+  height: 70px;
+}
+
+p {
+  margin: 0;
+}
+</style>

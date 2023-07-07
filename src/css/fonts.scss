@@ -11,9 +11,9 @@
 }
 
 .text-h1 {
-  font-size: 60px !important;
-  font-weight: 400 !important;
-  line-height: 80px !important;
+  font-size: 128px !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
 }
 
 .text-h2 {
@@ -30,6 +30,30 @@
 
 .text-h4 {
   font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 32px !important;
+}
+
+.text-subtitle1,
+.text-subtitle2 {
+  font-family: 'Epilogue' !important;
+}
+
+.text-subtitle2 {
+  font-size: 24px !important;
   font-weight: 400 !important;
-  line-height: 30px !important;
+  line-height: 32px !important;
+}
+
+.text-subtitle1 {
+  font-size: 36px !important;
+  font-weight: 400 !important;
+  line-height: 46px !important;
+}
+
+.text-subtitle3 {
+  color: #162e3c !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
 }
