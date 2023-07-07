@@ -7,12 +7,9 @@
     </div>
 
     <div class="q-pt-xl row justify-center">
-      <img src="../../assets/image/picture1.png" alt="" />
-    </div>
-
-    <div class="welcomeSubtract no-wrap">
-      <img class="image1" src="../../assets/image/Subtract.png" alt="" />
-      <img class="image2" src="../../assets/image/Subtract.png" alt="" />
+      <div class="pocket">
+        <img src="../../assets/image/picture1.png" alt="" />
+      </div>
     </div>
   </body>
 </template>
@@ -32,19 +29,31 @@ button {
   flex-shrink: 0;
 }
 
-.welcomeSubtract {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.image1 {
+.pocket {
   position: relative;
 }
 
-.image2 {
-  transform: scale(-1, 1);
+.pocket::before,
+.pocket::after {
+  content: '';
   position: absolute;
-  left: calc((1vw + 1vh) * 30);
+  bottom: 200px;
+  width: 1322.632px;
+  height: 445.995px;
+  transform: rotate(14.071deg);
+  border-radius: 1322.632px;
+  background-color: white;
+}
+
+.pocket::before {
+  left: -50%
+}
+
+.pocket::after {
+  right: -50%;
+  width: 1322.632px;
+  height: 445.995px;
+  transform: rotate(165.929deg);
+  border-radius: 1322.632px;
 }
 </style>
