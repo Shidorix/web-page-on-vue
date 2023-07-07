@@ -13,20 +13,20 @@
 .pocket::after {
   content: '';
   position: absolute;
-  bottom: 350px;
-  width: calc((1vw + 1vh) * 33);
-  height: 500px;
+  bottom: 300px;
+  width: calc((1vw + 1vh) * 70);
+  height: 100%;
 }
 
 .pocket::before {
-  left: 50%;
-  background-image: url('../../assets/image/Subtract.png');
+  left: 49%;
+  background-image: url('../../assets/image/Subtract2.png');
   transform: scale(-1, 1);
 }
 
 .pocket::after {
-  right: 50%;
-  background-image: url('../../assets/image/Subtract.png');
+  right: 49%;
+  background-image: url('../../assets/image/Subtract2.png');
   //   transform: scale(-1, 1)
 }
 </style>
