@@ -5,10 +5,11 @@
 <style scoped lang="scss">
 .pocket {
   position: relative;
-  width: calc((1vw + 1vh) * 70);
-  height: 210px;
-  background-image: url('../../assets/image/Subtract4.svg');
-  bottom: 208px;
+  // width: calc((1vw + 1vh) * 70);
+  width: 100%;
+  height: 220px;
+  background-image: url('../../assets/image/Subtract8.svg');
+  bottom: 216px;
 }
 
 // .pocket::before,
