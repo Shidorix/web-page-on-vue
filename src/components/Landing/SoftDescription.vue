@@ -40,9 +40,10 @@ img {
 
 .first-text {
   width: 35%;
+  padding-right: 50px;
 }
 .first-text__description {
-  width: 70%;
+//   width: 85%;
 }
 
 .first-text__metka {
