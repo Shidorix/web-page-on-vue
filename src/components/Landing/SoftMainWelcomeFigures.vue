@@ -6,7 +6,7 @@
 .pocket {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 22em;
 }
 
 .pocket::before,

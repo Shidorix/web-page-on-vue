@@ -6,14 +6,20 @@
       <button class="text-subtitle3">Download DanIso</button>
     </div>
 
+    <circleVue class="circle1" />
+    <circleVue class="circle2"/>
+
     <div class="q-pt-xl row justify-center">
       <div>
         <img src="../../assets/image/picture1.png" alt="" />
       </div>
-
     </div>
   </body>
 </template>
+
+<script setup lang="ts">
+import circleVue from '../../composables/SoftCircle.vue';
+</script>
 
 <style lang="scss" scoped>
 body {
@@ -28,7 +34,22 @@ button {
   width: 180px;
   height: 52px;
   flex-shrink: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+img {
+  width: calc((1vw + 1vh) * 37);;
+}
 
+.circle1 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.circle2 {
+  position: absolute;
+  left: 86%;
+  top: 22%;
+}
 </style>

@@ -3,6 +3,23 @@
   src: local('Play-Regular'), url('../../src/assets/fonts/Epilogue-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'EpilogueExtraBold';
+  src: local('Play-Regular'),
+    url('../../src/assets/fonts/Epilogue-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'EpilogueSemiBold';
+  src: local('Play-Regular'),
+    url('../../src/assets/fonts/Epilogue-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'EpilogueBold';
+  src: local('Play-Regular'), url('../../src/assets/fonts/Epilogue-Bold.ttf');
+}
+
 .text-h1,
 .text-h2,
 .text-h3,
@@ -16,6 +33,15 @@
   line-height: normal !important;
 }
 
+.text-h1-for-number {
+  color: #162e3c;
+
+  font-family: 'EpilogueExtraBold' !important;
+  font-size: 72px !important;
+  font-weight: 800 !important;
+  line-height: 80px !important;
+}
+
 .text-h2 {
   font-size: 48px !important;
   font-weight: 400 !important;
@@ -23,14 +49,20 @@
 }
 
 .text-h3 {
-  font-size: 32px !important;
-  font-weight: 400 !important;
-  line-height: 40px !important;
+  color: #162E3C;
+
+  font-family: 'EpilogueExtraBold' !important;
+  font-size: 40px !important;
+  font-weight: 800 !important;
+  line-height: 48px !important;
 }
 
 .text-h4 {
-  font-size: 24px !important;
-  font-weight: 700 !important;
+  color: #162e3c;
+
+  font-family: 'EpilogueBold' !important;
+  font-size: 28px !important;
+  font-weight: 800 !important;
   line-height: 32px !important;
 }
 
@@ -56,4 +88,19 @@
   font-size: 15px !important;
   font-weight: 700 !important;
   line-height: 24px !important;
+}
+
+.text-subtitle4 {
+  font-family: 'EpilogueSemiBold' !important;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.text-subtitle5 {
+  color: rgba(22, 46, 60, 0.64) !important;
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  line-height: 46px !important;
 }
