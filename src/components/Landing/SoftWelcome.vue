@@ -44,12 +44,12 @@ img {
 .circle1 {
   position: absolute;
   left: 10%;
-  top: 10%;
+  top: 5%;
 }
 
 .circle2 {
   position: absolute;
   left: 86%;
-  top: 22%;
+  top: 18%;
 }
 </style>
