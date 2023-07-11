@@ -16,7 +16,7 @@
     <div class="column">
       <p class="text-h4">
         <span class="text-h1-for-number q-pr-md">1</span>
-        <span style="padding-left: 10px">Download ISO</span>
+        <span style="padding-left: 20px">Download ISO</span>
       </p>
       <p class="text-h4">
         <span class="text-h1-for-number q-pr-md">2</span> Add into DanIso
@@ -38,7 +38,7 @@
 
 
 .first-text {
-  width: 35%;
+  max-width: 35%;
   padding-right: 50px;
 }
 .first-text__description {

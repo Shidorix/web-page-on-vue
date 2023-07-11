@@ -11,6 +11,10 @@
       <p class="text-subtitle5 q-pt-md">
         Join our server to get help or talk to other people about smth idk what to write here so fuck off pls
       </p>
+
+      <div class="row justify-center">
+        <button class="text-subtitle3">Join Discord</button>
+      </div>
     </div>
   </div>
 </template>
@@ -22,7 +26,17 @@
     padding-bottom: 280px;
 }
 .discord-card__text {
-  min-width: 50%;
+  max-width: 50%;
   padding-left: 243px;
+}
+
+button {
+  border-radius: 64px;
+  border: none;
+  background: #6c9aa99a;
+  width: 180px;
+  height: 52px;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 </style>

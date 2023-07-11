@@ -3,7 +3,7 @@
     <div class="line" />
   </div>
 
-  <div class="description-card-left row justify-center items-center no-wrap q-px-xl">
+  <div class="description-card-left row justify-center items-center q-px-xl">
     <img src="../../assets/image/cat1.png" alt="" />
     <div class="description-card-left__text">
       <div class="description-card-left__metka text-subtitle4">Features</div>
@@ -20,7 +20,7 @@
   </div>
 
 
-  <div class="description-card-right row justify-center items-center no-wrap q-px-xl">
+  <div class="description-card-right row justify-center items-center q-px-xl">
     
     <div class="description-card-right__text">
       <div class="description-card-right__metka text-subtitle4">Features</div>
@@ -39,7 +39,7 @@
 
   </div>
 
-  <div class="description-card-left row justify-center items-center no-wrap q-px-xl">
+  <div class="description-card-left row justify-center items-center q-px-xl">
     <img src="../../assets/image/cat1.png" alt="" />
     <div class="description-card-left__text">
       <div class="description-card-left__metka text-subtitle4">Features</div>
@@ -55,7 +55,7 @@
     </div>
   </div>
 
-  <div class="description-card-right row justify-center items-center no-wrap q-px-xl">
+  <div class="description-card-right row justify-center items-center q-px-xl">
     
     <div class="description-card-right__text">
       <div class="description-card-right__metka text-subtitle4">Features</div>
@@ -94,7 +94,7 @@
 }
 
 .description-card-left__text {
-  width: 35%;
+  max-width: 35%;
   padding-left: 243px;
 }
 
@@ -117,7 +117,7 @@
     padding-top: 200px;
 }
 .description-card-right__text {
-  width: 35%;
+  max-width: 35%;
   padding-right: 243px;
 }
 
