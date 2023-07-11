@@ -6,6 +6,7 @@
       <soft-description />
       <soft-information />
       <soft-discord />
+      <soft-f-a-q />
     </main>
   </q-page>
 </template>
@@ -16,4 +17,5 @@ import SoftMainWelcomeFigures from '../components/Landing/SoftMainWelcomeFigures
 import SoftDescription from 'src/components/Landing/SoftDescription.vue';
 import SoftInformation from 'src/components/Landing/SoftInformation.vue';
 import SoftDiscord from 'src/components/Landing/SoftDiscord.vue';
+import SoftFAQ from 'src/components/Landing/SoftFAQ.vue';
 </script>

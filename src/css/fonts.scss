@@ -49,7 +49,7 @@
 }
 
 .text-h3 {
-  color: #162E3C;
+  color: #162e3c;
 
   font-family: 'EpilogueExtraBold' !important;
   font-size: 40px !important;
@@ -63,6 +63,14 @@
   font-family: 'EpilogueBold' !important;
   font-size: 28px !important;
   font-weight: 800 !important;
+  line-height: 32px !important;
+}
+
+.text-h4-for-faq {
+  color: #162e3c;
+  font-size: 32px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
   line-height: 32px !important;
 }
 
@@ -104,10 +112,19 @@
   font-weight: 600;
   line-height: 24px;
 }
+.text-subtitle4-for-faq {
+  font-family: 'Epilogue' !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 32px !important;
+}
 
 .text-subtitle5 {
   color: rgba(22, 46, 60, 0.64) !important;
+  font-family: 'Epilogue' !important;
   font-size: 32px !important;
   font-weight: 400 !important;
   line-height: 46px !important;
+  font-style: normal !important;
 }
