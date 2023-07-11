@@ -38,18 +38,18 @@ button {
 }
 
 img {
-  width: calc((1vw + 1vh) * 37);;
+  width: calc((1vw + 1vh) * 34);;
 }
 
 .circle1 {
   position: absolute;
   left: 10%;
-  top: 5%;
+  top: 1%;
 }
 
 .circle2 {
   position: absolute;
   left: 86%;
-  top: 18%;
+  top: 3.8%;
 }
 </style>

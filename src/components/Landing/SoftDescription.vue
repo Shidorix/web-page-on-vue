@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-center items-center">
+  <div class="row justify-center items-center q-px-xl">
     <div class="column items-center first-text">
       <div class="first-text__metka text-subtitle4">How it work</div>
 
@@ -13,9 +13,10 @@
       </p>
     </div>
 
-    <div class='column'>
+    <div class="column">
       <p class="text-h4">
-        <span class="text-h1-for-number q-pr-md">1</span> <span style="padding-left: 10px;">Download ISO</span>
+        <span class="text-h1-for-number q-pr-md">1</span>
+        <span style="padding-left: 10px">Download ISO</span>
       </p>
       <p class="text-h4">
         <span class="text-h1-for-number q-pr-md">2</span> Add into DanIso
@@ -25,25 +26,23 @@
       </p>
     </div>
 
-    <div class="column">
-      <img src="../../assets/image/usb.png" alt="" />
-      <img src="../../assets/image/trash.png" alt="" />
+    <div class="column img_wrapper">
+      <img class="usb_img" src="../../assets/image/usb2.svg" alt="" />
+      <img class="trash_img" src="../../assets/image/trash.svg" alt="" />
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-img {
-  width: 300px;
-  height: 300px;
-}
+
+
 
 .first-text {
   width: 35%;
   padding-right: 50px;
 }
 .first-text__description {
-//   width: 85%;
+  //   width: 85%;
 }
 
 .first-text__metka {
