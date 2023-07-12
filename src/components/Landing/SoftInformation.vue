@@ -3,86 +3,88 @@
     <div class="line" />
   </div>
 
-  <!-- <div class="description-card-left row justify-center items-center q-px-xl">
-    <img src="../../assets/image/cat1.png" alt="" />
-    <div class="description-card-left__text">
-      <div class="description-card-left__metka text-subtitle4">Features</div>
-
-      <h3 class="text-h3">
-        Fast installation of any OS without a USB flash drive
-      </h3>
-
-      <p class="text-subtitle5 q-pt-md">
-        Technical skills, design, business understanding, ability to put
-        themselves in the merchant's shoes.
-      </p>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="../../assets/image/cat1.png" alt="" />
     </div>
-  </div> -->
 
-  <div class="nigger">
-    <img src="../../assets/image/cat1.png" alt="" />
-    <div class="description-card-left__text">
-      <div class="description-card-left__metka text-subtitle4">Features</div>
+    <div class="grid-item">
+      <div class="description-card-left__text">
+        <div class="description-card-left__metka text-subtitle4">Features</div>
 
-      <h3 class="text-h3">
-        Fast installation of any OS without a USB flash drive
-      </h3>
+        <h3 class="text-h3">
+          Fast installation of any OS without a USB flash drive
+        </h3>
 
-      <p class="text-subtitle5 q-pt-md">
-        Technical skills, design, business understanding, ability to put
-        themselves in the merchant's shoes.
-      </p>
+        <p class="text-subtitle5 q-pt-md">
+          Technical skills, design, business understanding, ability to put
+          themselves in the merchant's shoes.
+        </p>
+      </div>
     </div>
   </div>
 
-  <div class="description-card-right row justify-center items-center q-px-xl">
-    <div class="description-card-right__text">
-      <div class="description-card-right__metka text-subtitle4">Features</div>
+  <div class="grid-container grid-container-right">
+    <div class="grid-item">
+      <div class="description-card-right__text">
+        <div class="description-card-right__metka text-subtitle4">Features</div>
 
-      <h3 class="text-h3">
-        Fast installation of any OS without a USB flash drive
-      </h3>
+        <h3 class="text-h3">
+          Fast installation of any OS without a USB flash drive
+        </h3>
 
-      <p class="text-subtitle5 q-pt-md">
-        Technical skills, design, business understanding, ability to put
-        themselves in the merchant's shoes.
-      </p>
+        <p class="text-subtitle5 q-pt-md">
+          Technical skills, design, business understanding, ability to put
+          themselves in the merchant's shoes.
+        </p>
+      </div>
     </div>
 
-    <img src="../../assets/image/cat1.png" alt="" />
-  </div>
-
-  <div class="description-card-left row justify-center items-center q-px-xl">
-    <img src="../../assets/image/cat1.png" alt="" />
-    <div class="description-card-left__text">
-      <div class="description-card-left__metka text-subtitle4">Features</div>
-
-      <h3 class="text-h3">
-        Fast installation of any OS without a USB flash drive
-      </h3>
-
-      <p class="text-subtitle5 q-pt-md">
-        Technical skills, design, business understanding, ability to put
-        themselves in the merchant's shoes.
-      </p>
+    <div class="grid-item">
+      <img src="../../assets/image/cat1.png" alt="" />
     </div>
   </div>
 
-  <div class="description-card-right row justify-center items-center q-px-xl">
-    <div class="description-card-right__text">
-      <div class="description-card-right__metka text-subtitle4">Features</div>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="../../assets/image/cat1.png" alt="" />
+    </div>
+    <div class="grid-item">
+      <div class="description-card-left__text">
+        <div class="description-card-left__metka text-subtitle4">Features</div>
 
-      <h3 class="text-h3">
-        Fast installation of any OS without a USB flash drive
-      </h3>
+        <h3 class="text-h3">
+          Fast installation of any OS without a USB flash drive
+        </h3>
 
-      <p class="text-subtitle5 q-pt-md">
-        Technical skills, design, business understanding, ability to put
-        themselves in the merchant's shoes.
-      </p>
+        <p class="text-subtitle5 q-pt-md">
+          Technical skills, design, business understanding, ability to put
+          themselves in the merchant's shoes.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container grid-container-right">
+    <div class="grid-item">
+      <div class="description-card-right__text">
+        <div class="description-card-right__metka text-subtitle4">Features</div>
+
+        <h3 class="text-h3">
+          Fast installation of any OS without a USB flash drive
+        </h3>
+
+        <p class="text-subtitle5 q-pt-md">
+          Technical skills, design, business understanding, ability to put
+          themselves in the merchant's shoes.
+        </p>
+      </div>
     </div>
 
-    <img src="../../assets/image/cat1.png" alt="" />
+    <div class="grid-item">
+      <img src="../../assets/image/cat1.png" alt="" />
+    </div>
+
   </div>
 </template>
 
@@ -92,10 +94,17 @@ img {
   height: auto !important;
 }
 
-.nigger {
+.grid-container {
   display: grid;
-  grid-gap: 1.25rem;
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0%;
+  padding-top: 200px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -116,8 +125,8 @@ img {
 }
 
 .description-card-left__text {
-  width: 35%;
-  padding-left: 243px;
+  width: 65%;
+  // padding-left: 243px;
 }
 
 .description-card-left__metka {
@@ -139,8 +148,7 @@ img {
   padding-top: 200px;
 }
 .description-card-right__text {
-  max-width: 35%;
-  padding-right: 243px;
+  width: 65%;
 }
 
 .description-card-right__metka {
@@ -157,23 +165,27 @@ img {
 }
 
 @media only screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
   .description-card-left__text {
     width: 75%;
     padding-left: 10%;
     padding-top: 55px;
   }
 
-  .description-card-left__metka {
-    position: relative;
-    left: 10px;
-    margin-bottom: 5px;
-    border-radius: 64px;
-    background: #6c9aa99a;
-    width: 120px;
-    height: 30px;
-    flex-shrink: 0;
-    padding-top: 3px;
-    text-align: center;
+  .description-card-right__text {
+    width: 75%;
+    padding-left: 10%;
+    padding-top: 55px;
+  }
+
+  .grid-container-right .grid-item:nth-child(1) {
+    order: 2;
+  }
+  .grid-container-right .grid-item:nth-child(2) {
+    order: 1;
   }
 }
 </style>
