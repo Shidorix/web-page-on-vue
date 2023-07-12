@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-center container">
-    <div class="faq-card__text q-mr-xl">
+  <div class="row justify-center container items-center">
+    <div class="faq-card__text q-mr-xl q-pb-xl">
       <div class="faq-card__metka text-subtitle4">Features</div>
 
       <h3 class="text-h3">
@@ -12,8 +12,10 @@
         themselves in the merchant's shoes.
       </p>
     </div>
+    <div class="column items-center">
+      <img src="../../assets/image/oblako.svg" alt="" class="q-pb-xl">
 
-    <q-list class="faq-wrapper my-faq">
+      <q-list class="faq-wrapper my-faq">
       <q-expansion-item
         expand-icon='img:up.svg'
         class="text-h4-for-faq faq-wrapper_text q-px-xl q-py-xl"
@@ -24,6 +26,8 @@
         <div class="text-subtitle4-for-faq q-py-lg">{{ item.answer }}</div>
       </q-expansion-item>
     </q-list>
+    </div>
+    
   </div>
 </template>
 
@@ -38,20 +42,20 @@ interface FaqItem {
 const state = reactive({
   faq: [
     {
-      question: 'Question 1',
-      answer: 'Answer 1',
+      question: 'А Данил пидор?',
+      answer: 'Да',
     },
     {
-      question: 'Question 2',
-      answer: 'Answer 2',
+      question: 'А какой из',
+      answer: 'оба нахуй',
     },
     {
-      question: 'Question 3',
-      answer: 'Answer 3',
+      question: 'Вы за Россию или за украину?',
+      answer: 'За Уганду',
     },
     {
-      question: 'Question 4',
-      answer: 'Answer 4',
+      question: 'Как подойти к девочке',
+      answer: 'Лучше не подходить',
     },
   ] as FaqItem[],
 });
@@ -72,7 +76,7 @@ const state = reactive({
 }
 
 .faq-card__text {
-  max-width: 35%;
+  min-width: 45%;
   padding-left: 243px;
 }
 

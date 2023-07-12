@@ -3,7 +3,7 @@
     <div class="line" />
   </div>
 
-  <div class="description-card-left row justify-center items-center q-px-xl">
+  <!-- <div class="description-card-left row justify-center items-center q-px-xl">
     <img src="../../assets/image/cat1.png" alt="" />
     <div class="description-card-left__text">
       <div class="description-card-left__metka text-subtitle4">Features</div>
@@ -17,29 +17,9 @@
         themselves in the merchant's shoes.
       </p>
     </div>
-  </div>
+  </div> -->
 
-
-  <div class="description-card-right row justify-center items-center q-px-xl">
-    
-    <div class="description-card-right__text">
-      <div class="description-card-right__metka text-subtitle4">Features</div>
-
-      <h3 class="text-h3">
-        Fast installation of any OS without a USB flash drive
-      </h3>
-
-      <p class="text-subtitle5 q-pt-md">
-        Technical skills, design, business understanding, ability to put
-        themselves in the merchant's shoes.
-      </p>
-    </div>
-
-    <img src="../../assets/image/cat1.png" alt="" />
-
-  </div>
-
-  <div class="description-card-left row justify-center items-center q-px-xl">
+  <div class="nigger">
     <img src="../../assets/image/cat1.png" alt="" />
     <div class="description-card-left__text">
       <div class="description-card-left__metka text-subtitle4">Features</div>
@@ -56,7 +36,6 @@
   </div>
 
   <div class="description-card-right row justify-center items-center q-px-xl">
-    
     <div class="description-card-right__text">
       <div class="description-card-right__metka text-subtitle4">Features</div>
 
@@ -71,11 +50,54 @@
     </div>
 
     <img src="../../assets/image/cat1.png" alt="" />
+  </div>
 
+  <div class="description-card-left row justify-center items-center q-px-xl">
+    <img src="../../assets/image/cat1.png" alt="" />
+    <div class="description-card-left__text">
+      <div class="description-card-left__metka text-subtitle4">Features</div>
+
+      <h3 class="text-h3">
+        Fast installation of any OS without a USB flash drive
+      </h3>
+
+      <p class="text-subtitle5 q-pt-md">
+        Technical skills, design, business understanding, ability to put
+        themselves in the merchant's shoes.
+      </p>
+    </div>
+  </div>
+
+  <div class="description-card-right row justify-center items-center q-px-xl">
+    <div class="description-card-right__text">
+      <div class="description-card-right__metka text-subtitle4">Features</div>
+
+      <h3 class="text-h3">
+        Fast installation of any OS without a USB flash drive
+      </h3>
+
+      <p class="text-subtitle5 q-pt-md">
+        Technical skills, design, business understanding, ability to put
+        themselves in the merchant's shoes.
+      </p>
+    </div>
+
+    <img src="../../assets/image/cat1.png" alt="" />
   </div>
 </template>
 
 <style scoped lang="scss">
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.nigger {
+  display: grid;
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -90,11 +112,11 @@
 }
 
 .description-card-left {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .description-card-left__text {
-  max-width: 35%;
+  width: 35%;
   padding-left: 243px;
 }
 
@@ -114,7 +136,7 @@
 // for right card
 
 .description-card-right {
-    padding-top: 200px;
+  padding-top: 200px;
 }
 .description-card-right__text {
   max-width: 35%;
@@ -132,5 +154,26 @@
   flex-shrink: 0;
   padding-top: 3px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .description-card-left__text {
+    width: 75%;
+    padding-left: 10%;
+    padding-top: 55px;
+  }
+
+  .description-card-left__metka {
+    position: relative;
+    left: 10px;
+    margin-bottom: 5px;
+    border-radius: 64px;
+    background: #6c9aa99a;
+    width: 120px;
+    height: 30px;
+    flex-shrink: 0;
+    padding-top: 3px;
+    text-align: center;
+  }
 }
 </style>
