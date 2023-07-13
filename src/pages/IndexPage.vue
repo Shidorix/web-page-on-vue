@@ -2,7 +2,6 @@
   <q-page style="overflow-x: hidden">
     <main>
       <soft-welcome />
-      <soft-main-welcome-figures />
       <soft-description />
       <soft-information />
       <soft-discord />
@@ -13,7 +12,6 @@
 
 <script setup lang="ts">
 import SoftWelcome from '../components/Landing/SoftWelcome.vue';
-import SoftMainWelcomeFigures from '../components/Landing/SoftMainWelcomeFigures.vue';
 import SoftDescription from 'src/components/Landing/SoftDescription.vue';
 import SoftInformation from 'src/components/Landing/SoftInformation.vue';
 import SoftDiscord from 'src/components/Landing/SoftDiscord.vue';

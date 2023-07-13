@@ -7,13 +7,18 @@
     </div>
 
     <circleVue class="circle1" />
-    <circleVue class="circle2"/>
+    <circleVue class="circle2" />
 
-    <div class="q-pt-xl row justify-center">
+    <div class="q-pt-xl row justify-center mainpic">
       <div>
         <img src="../../assets/image/picture1.png" alt="" />
       </div>
     </div>
+
+    <div class="pocket-container">
+      <img class="pocket" src="../../assets/image/Subtract8.svg" alt="" />
+    </div>
+    
   </body>
 </template>
 
@@ -22,6 +27,23 @@ import circleVue from '../../composables/SoftCircle.vue';
 </script>
 
 <style lang="scss" scoped>
+.pocket {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+  bottom: 50%;
+}
+
+.pocket-container {
+  position: relative;
+}
+
+.mainpic {
+  position: relative; /* Добавлено позиционирование */
+  z-index: 1; /* Изменено значение z-index на 1 */
+}
 body {
   background-color: #6c9aa9;
   padding-top: 191px;
@@ -38,7 +60,7 @@ button {
 }
 
 img {
-  width: calc((1vw + 1vh) * 34);;
+  width: calc((1vw + 1vh) * 34);
 }
 
 .circle1 {
