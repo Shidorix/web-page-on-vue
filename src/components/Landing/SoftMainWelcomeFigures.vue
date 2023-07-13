@@ -6,30 +6,10 @@
 .pocket {
   position: relative;
   // width: calc((1vw + 1vh) * 70);
-  width: 100%;
+  max-width: 100%;
   height: 220px;
   background-image: url('../../assets/image/Subtract8.svg');
+  background-size: cover;
   bottom: 216px;
 }
-
-// .pocket::before,
-// .pocket::after {
-//   content: '';
-//   position: absolute;
-//   bottom: 300px;
-//   width: calc((1vw + 1vh) * 70);
-//   height: 100%;
-// }
-
-// .pocket::before {
-//   left: 49%;
-//   background-image: url('../../assets/image/Subtract2.png');
-//   transform: scale(-1, 1);
-// }
-
-// .pocket::after {
-//   right: 49%;
-//   background-image: url('../../assets/image/Subtract2.png');
-//   //   transform: scale(-1, 1)
-// }
 </style>
