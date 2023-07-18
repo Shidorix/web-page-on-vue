@@ -1,6 +1,6 @@
 <template>
-  <div class="grid-container q-px-xl">
-    <div class="column items-center first-text grid-item">
+  <div class="row justify-center container items-center flex-wrap col-12 q-px-xl">
+    <div class="column items-center first-text col-12 col-lg-2">
       <div class="first-text__metka text-subtitle4">How it work</div>
 
       <h3 class="text-h3">
@@ -13,7 +13,7 @@
       </p>
     </div>
 
-    <div class="column grid-item-custom">
+    <div class="column col-12 col-lg-2 grid-item-custom">
       <p class="text-h4">
         <span class="text-h1-for-number q-pr-md">1</span>
         <span style="padding-left: 20px">Download ISO</span>
@@ -26,10 +26,11 @@
       </p>
     </div>
 
-    <div class="column img_wrapper grid-item">
+    <div class="column img_wrapper col-12 col-lg-4">
       <img class="usb_img" src="../../assets/image/usb2.svg" alt="" />
       <img class="trash_img" src="../../assets/image/trash.svg" alt="" />
     </div>
+    
   </div>
 </template>
 
@@ -51,11 +52,12 @@
 .grid-item-custom {
   display: flex;
   justify-content: center;
-  padding-left: 100px;
+  padding-left: 35px;
+  white-space: nowrap;
 }
 
 .first-text {
-  width: 100%;
+  width: 45%;
   // padding-left: 150px;
 }
 .first-text__description {
@@ -75,16 +77,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 1200px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  .grid-container-right .grid-item:nth-child(1) {
-    order: 2;
-  }
-  .grid-container-right .grid-item:nth-child(2) {
-    order: 1;
-  }
+@media only screen and (max-width: 1439px) {
 
   .grid-item-custom {
   align-items: center;
