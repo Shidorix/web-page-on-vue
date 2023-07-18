@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-center container items-center">
-    <div class="faq-card__text q-pb-xl">
+  <div class="row justify-center container items-center flex-wrap col-12">
+    <div class="faq-card__text q-pb-xl q-pl-xl col-12 col-lg-3">
       <div class="faq-card__metka text-subtitle4">Features</div>
 
       <h3 class="text-h3">
@@ -12,22 +12,21 @@
         themselves in the merchant's shoes.
       </p>
     </div>
-    <div class="column items-center">
+    <div class="column items-center col-12 col-lg-6">
       <img src="../../assets/image/oblako.svg" alt="" class="q-pb-xl">
 
-      <q-list class="faq-wrapper my-faq">
-      <q-expansion-item
-        expand-icon='img:up.svg'
-        class="text-h4-for-faq faq-wrapper_text q-px-xl q-py-xl"
-        v-for="(item, index) in state.faq"
-        :key="index"
-        :label="item.question"
-      >
-        <div class="text-subtitle4-for-faq q-py-lg">{{ item.answer }}</div>
-      </q-expansion-item>
-    </q-list>
+      <q-list class="faq-wrapper">
+        <q-expansion-item
+          expand-icon='img:up.svg'
+          class="text-h4-for-faq faq-wrapper_text q-px-xl q-py-xl"
+          v-for="(item, index) in state.faq"
+          :key="index"
+          :label="item.question"
+        >
+          <div class="text-subtitle4-for-faq q-py-lg">{{ item.answer }}</div>
+        </q-expansion-item>
+      </q-list>
     </div>
-    
   </div>
 </template>
 
@@ -71,12 +70,12 @@ const state = reactive({
   border: 3px solid #6c9aa9;
   background: #fff;
   box-shadow: 0px 32px 64px 0px rgba(57, 20, 0, 0.04);
-  min-width: 937px;
+  width: 90%;
   flex-shrink: 0;
 }
 
 .faq-card__text {
-  width: 65%;
+  width: 45%;
 }
 
 .faq-card__metka {
