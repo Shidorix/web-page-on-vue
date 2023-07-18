@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-center container items-center">
-    <div class="faq-card__text q-mr-xl q-pb-xl">
+    <div class="faq-card__text q-pb-xl">
       <div class="faq-card__metka text-subtitle4">Features</div>
 
       <h3 class="text-h3">
@@ -76,8 +76,7 @@ const state = reactive({
 }
 
 .faq-card__text {
-  min-width: 45%;
-  padding-left: 243px;
+  width: 65%;
 }
 
 .faq-card__metka {
