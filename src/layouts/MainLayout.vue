@@ -10,9 +10,12 @@
         </keep-alive>
       </router-view>
     </q-page-container>
+
+    <MainFooter />
   </q-layout>
 </template>
 
 <script setup lang="ts">
 import MainHeader from '../components/Landing/SoftHeader.vue';
+import MainFooter from '../components/Landing/SoftFooter.vue';
 </script>

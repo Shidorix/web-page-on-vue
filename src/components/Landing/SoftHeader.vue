@@ -5,7 +5,7 @@
       <p class="q-pl-md text-h4-for-logo">DanIso</p>
     </div>
 
-    <div class="col-6 row justify-center">
+    <div class="col-6 row justify-center no-wrap">
       <a class="q-px-xl text-subtitle2">About</a>
       <a class="q-px-xl text-subtitle2">Services</a>
       <a class="q-px-xl text-subtitle2">Pricing</a>
