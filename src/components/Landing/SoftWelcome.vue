@@ -16,7 +16,7 @@
     </div>
 
     <div class="pocket-container">
-      <img class="pocket" src="../../assets/image/Subtract8.svg" alt="" />
+      <img class="pocket" src="../../assets/image/Subtract.svg" alt="" />
     </div>
   </body>
 </template>
@@ -56,6 +56,7 @@ onMounted(() => {
   object-fit: contain;
   height: auto;
   bottom: 50%;
+  margin-bottom: -3px;
 }
 
 .pocket-container {
@@ -84,7 +85,6 @@ button {
 img {
   width: calc((1vw + 1vh) * 34);
 }
-
 .circle1 {
   position: absolute;
   left: 10%;
