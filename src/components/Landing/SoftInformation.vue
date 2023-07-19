@@ -1,14 +1,14 @@
 <template>
-  <div class="container q-px-xl">
+  <div class="row items-center justify-center q-px-xl">
     <div class="line" />
   </div>
 
-  <div class="grid-container">
-    <div class="grid-item">
+  <div class="col-12 row justify-center container">
+    <div class="col-12 col-lg-6 justify-center row">
       <img src="../../assets/image/cat1.png" alt="" />
     </div>
 
-    <div class="grid-item">
+    <div class="col-12 col-lg-6 justify-center row">
       <div class="description-card-left__text">
         <div class="description-card-left__metka text-subtitle4">Features</div>
 
@@ -24,8 +24,8 @@
     </div>
   </div>
 
-  <div class="grid-container grid-container-right">
-    <div class="grid-item">
+  <div class="col-12 row justify-center container grid-container-right">
+    <div class="col-12 col-lg-6 row justify-center grid-item">
       <div class="description-card-right__text">
         <div class="description-card-right__metka text-subtitle4">Features</div>
 
@@ -40,16 +40,17 @@
       </div>
     </div>
 
-    <div class="grid-item">
+    <div class="col-12 col-lg-6 row justify-center grid-item">
       <img src="../../assets/image/cat1.png" alt="" />
     </div>
   </div>
 
-  <div class="grid-container">
-    <div class="grid-item">
+  <div class="col-12 row justify-center container">
+    <div class="col-12 col-lg-6 justify-center row">
       <img src="../../assets/image/cat1.png" alt="" />
     </div>
-    <div class="grid-item">
+
+    <div class="col-12 col-lg-6 justify-center row">
       <div class="description-card-left__text">
         <div class="description-card-left__metka text-subtitle4">Features</div>
 
@@ -65,8 +66,8 @@
     </div>
   </div>
 
-  <div class="grid-container grid-container-right">
-    <div class="grid-item">
+  <div class="col-12 row justify-center container grid-container-right">
+    <div class="col-12 col-lg-6 row justify-center grid-item">
       <div class="description-card-right__text">
         <div class="description-card-right__metka text-subtitle4">Features</div>
 
@@ -81,7 +82,7 @@
       </div>
     </div>
 
-    <div class="grid-item">
+    <div class="col-12 col-lg-6 row justify-center grid-item">
       <img src="../../assets/image/cat1.png" alt="" />
     </div>
 
@@ -108,9 +109,7 @@ img {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 10% 0 10% 0;
 }
 .line {
   margin-top: 135px;
@@ -164,21 +163,10 @@ img {
   text-align: center;
 }
 
-@media only screen and (max-width: 1200px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
+@media only screen and (max-width: 1439px) {
 
-  .description-card-left__text {
-    width: 75%;
-    padding-left: 10%;
-    padding-top: 55px;
-  }
-
-  .description-card-right__text {
-    width: 75%;
-    padding-left: 10%;
-    padding-top: 55px;
+  img {
+    padding-bottom: 5%;
   }
 
   .grid-container-right .grid-item:nth-child(1) {

@@ -35,19 +35,6 @@
 </template>
 
 <style scoped lang="scss">
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 10px;
-  padding-top: 200px;
-  padding: 0px 100px 0 100px;
-}
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .grid-item-custom {
   display: flex;
@@ -58,10 +45,6 @@
 
 .first-text {
   width: 45%;
-  // padding-left: 150px;
-}
-.first-text__description {
-  //   width: 85%;
 }
 
 .first-text__metka {
