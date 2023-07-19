@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-center container items-center flex-wrap col-12 q-px-xl">
-    <div class="column items-center first-text col-12 col-lg-2">
+    <div class="first-text col-12 col-lg-2">
       <div class="first-text__metka text-subtitle4">How it work</div>
 
       <h3 class="text-h3">
@@ -49,7 +49,7 @@
 
 .first-text__metka {
   position: relative;
-  right: 40%;
+  left: 10px;
   margin-bottom: 5px;
   border-radius: 64px;
   background: #6c9aa99a;
