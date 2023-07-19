@@ -16,4 +16,5 @@ import SoftDescription from 'src/components/Landing/SoftDescription.vue';
 import SoftInformation from 'src/components/Landing/SoftInformation.vue';
 import SoftDiscord from 'src/components/Landing/SoftDiscord.vue';
 import SoftFAQ from 'src/components/Landing/SoftFAQ.vue';
+// import anim from '../sdk/animations/anim'
 </script>

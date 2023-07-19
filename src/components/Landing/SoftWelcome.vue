@@ -1,5 +1,5 @@
 <template>
-  <body style="color: white">
+  <body style="color: white" class="body-section">
     <div class="justify-center items-center column">
       <h1 class="text-h1">DanIso</h1>
       <p class="text-subtitle1">Install OS without USB</p>
@@ -18,12 +18,34 @@
     <div class="pocket-container">
       <img class="pocket" src="../../assets/image/Subtract8.svg" alt="" />
     </div>
-    
   </body>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import circleVue from '../../composables/SoftCircle.vue';
+import { onMounted } from 'vue';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  console.log('Animating mainpic');
+
+  gsap.fromTo(
+    '.mainpic',
+    { scale: 1 },
+    {
+      scale: 0,
+      scrollTrigger: {
+        trigger: '.mainpic',
+        start: 'top center',
+        end: 'bottom top',
+        scrub: true,
+      },
+    }
+  );
+});
 </script>
 
 <style lang="scss" scoped>
