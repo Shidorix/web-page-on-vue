@@ -94,20 +94,6 @@ img {
   max-width: 100% !important;
   height: auto !important;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 0%;
-  padding-top: 200px;
-}
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .container {
   padding: 10% 0 10% 0;
 }
