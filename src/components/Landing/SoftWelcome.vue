@@ -6,8 +6,8 @@
       <button class="text-subtitle3">Download DanIso</button>
     </div>
 
-    <circleVue class="circle1" />
-    <circleVue class="circle2" />
+    <circleVue class="circle1" data-speed="0.5" />
+    <circleVue class="circle2" data-speed="0.5" />
 
     
       <div class="q-pt-xl row justify-center mainpic">
