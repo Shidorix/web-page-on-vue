@@ -9,15 +9,21 @@
     <circleVue class="circle1" />
     <circleVue class="circle2" />
 
-    <div class="q-pt-xl row justify-center mainpic">
-      <div>
-        <img src="../../assets/image/picture1.png" alt="" class="mainpic_img"/>
+    
+      <div class="q-pt-xl row justify-center mainpic">
+        <div>
+          <img
+            src="../../assets/image/picture1.png"
+            alt=""
+            class="mainpic_img"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="pocket-container">
-      <img class="pocket" src="../../assets/image/Subtract.svg" alt="" />
-    </div>
+      <div class="pocket-container">
+        <img class="pocket" src="../../assets/image/Subtract.svg" alt="" />
+      </div>
+    
   </body>
 </template>
 
@@ -34,27 +40,24 @@ onMounted(() => {
   console.log('Animating mainpic');
 
   if (ScrollTrigger.isTouch !== 1) {
-
     ScrollSmoother.create({
       smooth: 1,
       effects: true,
     });
 
     gsap.fromTo(
-      '.mainpic',
+      '.mainpic_img',
       { y: 0 },
       {
-        y: 100,
+        y: 200,
         scrollTrigger: {
-          trigger: '.mainpic',
+          trigger: '.mainpic_img',
           start: 'top center',
-          end: 'center',
+          end: 'bottom',
           scrub: true,
         },
       }
     );
-
-    
   }
 });
 </script>
@@ -67,7 +70,7 @@ onMounted(() => {
   object-fit: contain;
   height: auto;
   bottom: 50%;
-  margin-bottom: -3px;
+  margin-bottom: -5px;
 }
 
 .pocket-container {
@@ -80,6 +83,9 @@ onMounted(() => {
   overflow: hidden;
 }
 
+.images_wrapper {
+  overflow: hidden;
+}
 body {
   background-color: #6c9aa9;
   padding-top: 191px;

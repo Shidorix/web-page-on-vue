@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-center container items-center flex-wrap col-12 q-px-xl">
+  <div class="row justify-center container items-center flex-wrap col-12 q-px-xl q-py-xl" style="z-index: 2">  <!-- z-index для того чтобы картинка с компонента выше, скрывалась под этим -->
     <div class="first-text col-12 col-lg-2">
       <div class="first-text__metka text-subtitle4">How it work</div>
 
@@ -35,6 +35,7 @@
 </template>
 
 <style scoped lang="scss">
+
 
 .grid-item-custom {
   display: flex;

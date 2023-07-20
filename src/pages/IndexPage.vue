@@ -2,7 +2,7 @@
   <q-page style="overflow-x: hidden">
     <main>
       <soft-welcome />
-      <soft-description />
+      <soft-description/>
       <soft-information />
       <soft-discord />
       <soft-f-a-q />
@@ -16,5 +16,5 @@ import SoftDescription from 'src/components/Landing/SoftDescription.vue';
 import SoftInformation from 'src/components/Landing/SoftInformation.vue';
 import SoftDiscord from 'src/components/Landing/SoftDiscord.vue';
 import SoftFAQ from 'src/components/Landing/SoftFAQ.vue';
-// import anim from '../sdk/animations/anim'
+
 </script>

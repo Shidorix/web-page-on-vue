@@ -3,7 +3,7 @@
     <div class="line" />
   </div>
 
-  <div class="col-12 row justify-center container">
+  <div class="col-12 row justify-center items-center container">
     <div class="col-12 col-lg-6 justify-center row">
       <img src="../../assets/image/cat1.png" alt="" />
     </div>
@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="col-12 row justify-center container grid-container-right">
+  <div class="col-12 row justify-center items-center container grid-container-right">
     <div class="col-12 col-lg-6 row justify-center grid-item">
       <div class="description-card-right__text">
         <div class="description-card-right__metka text-subtitle4">Features</div>
@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <div class="col-12 row justify-center container">
+  <div class="col-12 row justify-center items-center container">
     <div class="col-12 col-lg-6 justify-center row">
       <img src="../../assets/image/cat1.png" alt="" />
     </div>
@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <div class="col-12 row justify-center container grid-container-right">
+  <div class="col-12 row justify-center items-center container grid-container-right">
     <div class="col-12 col-lg-6 row justify-center grid-item">
       <div class="description-card-right__text">
         <div class="description-card-right__metka text-subtitle4">Features</div>
