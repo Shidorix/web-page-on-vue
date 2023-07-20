@@ -4,7 +4,7 @@
     style="z-index: 2"
   >
     <!-- z-index для того чтобы картинка с компонента выше, скрывалась под этим -->
-    <div class="first-text col-12 col-lg-2">
+    <div class="first-text col-12 col-lg-3">
       <div class="first-text__metka text-subtitle4">How it work</div>
 
       <h3 class="text-h3">
@@ -17,7 +17,14 @@
       </p>
     </div>
 
-    <div class="column col-12 col-lg-2 grid-item-custom">
+    <div class="column justify-center items-center">
+      <div class="column col-12 col-lg-3">
+        <img class="usb_img" src="../../assets/image/usb2.svg" alt="" />
+        <img class="trash_img" src="../../assets/image/trash.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="column col-12 col-lg-3 grid-item-custom">
       <p class="text-h4">
         <span class="text-h1-for-number q-pr-md">1</span>
         <span style="padding-left: 20px">Download ISO</span>
@@ -28,11 +35,6 @@
       <p class="text-h4">
         <span class="text-h1-for-number q-pr-md">3</span> Done
       </p>
-    </div>
-
-    <div class="column img_wrapper col-12 col-lg-4">
-      <img class="usb_img" src="../../assets/image/usb2.svg" alt="" />
-      <img class="trash_img" src="../../assets/image/trash.svg" alt="" />
     </div>
   </div>
 </template>
@@ -74,12 +76,12 @@ onMounted(() => {
 .grid-item-custom {
   display: flex;
   justify-content: center;
-  padding-left: 35px;
+  // padding-left: 35px;
   white-space: nowrap;
 }
 
 .first-text {
-  width: 45%;
+  width: 25%;
 }
 
 .first-text__metka {
@@ -107,6 +109,9 @@ onMounted(() => {
   .grid-item-custom {
     align-items: center;
     padding-left: 0px;
+  }
+  .first-text {
+    width: 55%;
   }
 }
 </style>

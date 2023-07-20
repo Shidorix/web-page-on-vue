@@ -19,9 +19,9 @@
 </template>
 
 <script setup lang="ts">
-import MainHeader from "../components/Landing/SoftHeader.vue";
-import MainFooter from "../components/Landing/SoftFooter.vue";
-import setupScroll from "../sdk/animations/setupScroll";
+import MainHeader from '../components/Landing/SoftHeader.vue';
+import MainFooter from '../components/Landing/SoftFooter.vue';
+import setupScroll from '../sdk/animations/setupScroll';
 
 setupScroll();
 </script>
