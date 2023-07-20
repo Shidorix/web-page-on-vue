@@ -1,6 +1,6 @@
 <template>
   <body style="color: white" class="body-section">
-    <div class="justify-center items-center column">
+    <div class="justify-center items-center column main-text">
       <h1 class="text-h1">DanIso</h1>
       <p class="text-subtitle1">Install OS without USB</p>
       <button class="text-subtitle3">Download DanIso</button>
@@ -10,12 +10,12 @@
     <circleVue class="circle2" data-speed="0.5" />
 
     
-      <div class="q-pt-xl row justify-center mainpic">
+      <div class="q-pt-xl row justify-center main-pic">
         <div>
           <img
             src="../../assets/image/picture1.png"
             alt=""
-            class="mainpic_img"
+            class="main-pic_img"
           />
         </div>
       </div>
@@ -46,18 +46,28 @@ onMounted(() => {
     });
 
     gsap.fromTo(
-      '.mainpic_img',
+      '.main-pic_img',
       { y: 0 },
       {
         y: 200,
         scrollTrigger: {
-          trigger: '.mainpic_img',
+          trigger: '.main-pic_img',
           start: 'top center',
           end: 'bottom',
           scrub: true,
         },
       }
     );
+
+    gsap.fromTo('.main-text', { opacity: 1 }, {
+		opacity: 0,
+		scrollTrigger: {
+			trigger: '.main-text',
+			start: 'top top',
+			end: '420',
+			scrub: true
+		}
+	})
   }
 });
 </script>
@@ -77,7 +87,7 @@ onMounted(() => {
   position: relative;
 }
 
-.mainpic {
+.main-pic {
   position: relative;
   z-index: 1;
   overflow: hidden;
