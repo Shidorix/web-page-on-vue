@@ -11,7 +11,7 @@
 
     <div class="q-pt-xl row justify-center mainpic">
       <div>
-        <img src="../../assets/image/picture1.png" alt="" />
+        <img src="../../assets/image/picture1.png" alt="" class="mainpic_img"/>
       </div>
     </div>
 
@@ -26,25 +26,36 @@ import circleVue from '../../composables/SoftCircle.vue';
 import { onMounted } from 'vue';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollSmoother from 'gsap/ScrollSmoother.min.js';
 
 onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
   console.log('Animating mainpic');
 
-  gsap.fromTo(
-    '.mainpic',
-    { scale: 1 },
-    {
-      scale: 0,
-      scrollTrigger: {
-        trigger: '.mainpic',
-        start: 'top center',
-        end: 'bottom top',
-        scrub: true,
-      },
-    }
-  );
+  if (ScrollTrigger.isTouch !== 1) {
+
+    ScrollSmoother.create({
+      smooth: 1,
+      effects: true,
+    });
+
+    gsap.fromTo(
+      '.mainpic',
+      { y: 0 },
+      {
+        y: 100,
+        scrollTrigger: {
+          trigger: '.mainpic',
+          start: 'top center',
+          end: 'center',
+          scrub: true,
+        },
+      }
+    );
+
+    
+  }
 });
 </script>
 
@@ -64,9 +75,11 @@ onMounted(() => {
 }
 
 .mainpic {
-  position: relative; /* Добавлено позиционирование */
-  z-index: 1; /* Изменено значение z-index на 1 */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
+
 body {
   background-color: #6c9aa9;
   padding-top: 191px;
