@@ -17,6 +17,22 @@
   </div>
 </template>
 
+<script setup>
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollSmoother from 'gsap/ScrollSmoother.min.js';
+
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  console.log('Animating mainpic');
+
+  if (ScrollTrigger.isTouch !== 1) {
+    
+  }
+
+</script>
+
 <style scoped lang="scss">
 .discord-card {
   padding-top: 280px;

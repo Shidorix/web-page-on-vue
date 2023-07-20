@@ -1,5 +1,9 @@
 <template>
-  <div class="row justify-center container items-center flex-wrap col-12 q-px-xl q-py-xl" style="z-index: 2">  <!-- z-index для того чтобы картинка с компонента выше, скрывалась под этим -->
+  <div
+    class="row justify-center container items-center flex-wrap col-12 q-px-xl q-py-xl"
+    style="z-index: 2"
+  >
+    <!-- z-index для того чтобы картинка с компонента выше, скрывалась под этим -->
     <div class="first-text col-12 col-lg-2">
       <div class="first-text__metka text-subtitle4">How it work</div>
 
@@ -30,13 +34,43 @@
       <img class="usb_img" src="../../assets/image/usb2.svg" alt="" />
       <img class="trash_img" src="../../assets/image/trash.svg" alt="" />
     </div>
-    
   </div>
 </template>
 
+<script setup>
+import { onMounted } from 'vue';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  console.log('Animating mainpic');
+
+  if (ScrollTrigger.isTouch !== 1) {
+    // ScrollSmoother.create({
+    //   smooth: 1,
+    //   effects: true,
+    // });
+
+    gsap.fromTo(
+      '.usb_img',
+      { y: 0 },
+      {
+        y: 290,
+        scrollTrigger: {
+          trigger: '.usb_img',
+          start: 'top center',
+          end: 'bottom',
+          scrub: true,
+        },
+      }
+    );
+  }
+});
+</script>
+
 <style scoped lang="scss">
-
-
 .grid-item-custom {
   display: flex;
   justify-content: center;
@@ -61,11 +95,18 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 1439px) {
-
-  .grid-item-custom {
-  align-items: center;
-  padding-left: 0px;
+.usb_img {
+  z-index: 1;
 }
+
+.trash_img {
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1439px) {
+  .grid-item-custom {
+    align-items: center;
+    padding-left: 0px;
+  }
 }
 </style>

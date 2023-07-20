@@ -32,18 +32,13 @@ import circleVue from '../../composables/SoftCircle.vue';
 import { onMounted } from 'vue';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import ScrollSmoother from 'gsap/ScrollSmoother.min.js';
 
 onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+  gsap.registerPlugin(ScrollTrigger);
 
   console.log('Animating mainpic');
 
   if (ScrollTrigger.isTouch !== 1) {
-    ScrollSmoother.create({
-      smooth: 1,
-      effects: true,
-    });
 
     gsap.fromTo(
       '.main-pic_img',
