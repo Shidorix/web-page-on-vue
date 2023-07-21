@@ -1,5 +1,9 @@
 # Quasar App (installwindowswithoutusb)
 
+![image](https://github.com/alphaprojectteam/web-page/assets/64258371/8556566c-20a6-461a-b6f5-94c7ccc31dab)
+
+
+
 A Quasar Project
 
 ## Install the dependencies
