@@ -56,8 +56,8 @@ onMounted(() => {
         y: 290,
         scrollTrigger: {
           trigger: '.usb_img',
-          start: 'top center',
-          end: 'bottom',
+          start: 'top bottom',
+          end: 'bottom top',
           scrub: true,
         },
       }
