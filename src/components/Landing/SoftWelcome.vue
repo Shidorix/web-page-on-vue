@@ -9,21 +9,19 @@
     <circleVue class="circle1" data-speed="0.5" />
     <circleVue class="circle2" data-speed="0.5" />
 
-    
-      <div class="q-pt-xl row justify-center main-pic">
-        <div>
-          <img
-            src="../../assets/image/picture1.png"
-            alt=""
-            class="main-pic_img"
-          />
-        </div>
+    <div class="q-pt-xl row justify-center main-pic">
+      <div>
+        <img
+          src="../../assets/image/picture1.png"
+          alt=""
+          class="main-pic_img"
+        />
       </div>
+    </div>
 
-      <div class="pocket-container">
-        <img class="pocket" src="../../assets/image/Subtract.svg" alt="" />
-      </div>
-    
+    <div class="pocket-container">
+      <img class="pocket" src="../../assets/image/Subtract.svg" alt="" />
+    </div>
   </body>
 </template>
 
@@ -39,7 +37,6 @@ onMounted(() => {
   console.log('Animating mainpic');
 
   if (ScrollTrigger.isTouch !== 1) {
-
     gsap.fromTo(
       '.main-pic_img',
       { y: 0 },
@@ -54,15 +51,19 @@ onMounted(() => {
       }
     );
 
-    gsap.fromTo('.main-text', { opacity: 1 }, {
-		opacity: 0,
-		scrollTrigger: {
-			trigger: '.main-text',
-			start: 'top top',
-			end: '420',
-			scrub: true
-		}
-	})
+    gsap.fromTo(
+      '.main-text',
+      { opacity: 1 },
+      {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: '.main-text',
+          start: 'top top',
+          end: '420',
+          scrub: true,
+        },
+      }
+    );
   }
 });
 </script>
@@ -104,7 +105,14 @@ button {
   height: 52px;
   flex-shrink: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  transition: transform 0.3s;
 }
+
+button:hover {
+  transform: scale(1.1);
+}
+
 
 img {
   width: calc((1vw + 1vh) * 34);

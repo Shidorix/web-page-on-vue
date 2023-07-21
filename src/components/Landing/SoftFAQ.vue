@@ -41,20 +41,20 @@ interface FaqItem {
 const state = reactive({
   faq: [
     {
-      question: 'А Данил пидор?',
-      answer: 'Да',
+      question: 'Its free?',
+      answer: 'Yes',
     },
     {
-      question: 'А какой из',
-      answer: 'оба нахуй',
+      question: 'Can i install any OS or just Windows',
+      answer: 'Poshel nahuy',
     },
     {
-      question: 'Вы за Россию или за украину?',
-      answer: 'За Уганду',
+      question: 'Are you support Russia or ukraine?',
+      answer: 'umm))',
     },
     {
-      question: 'Как подойти к девочке',
-      answer: 'Лучше не подходить',
+      question: 'Can i give you all my money?',
+      answer: 'I would say you must do it',
     },
   ] as FaqItem[],
 });

@@ -48,6 +48,7 @@ onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
 
   if (ScrollTrigger.isTouch !== 1) {
+    console.log('animate usb');
 
     gsap.fromTo(
       '.usb_img',
@@ -70,7 +71,6 @@ onMounted(() => {
 .grid-item-custom {
   display: flex;
   justify-content: center;
-  // padding-left: 35px;
   white-space: nowrap;
 }
 

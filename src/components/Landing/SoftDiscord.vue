@@ -17,9 +17,7 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 .discord-card {
@@ -47,6 +45,12 @@ button {
   height: 52px;
   flex-shrink: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1200px) {
