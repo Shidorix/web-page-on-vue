@@ -47,13 +47,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
 
-  console.log('Animating mainpic');
-
   if (ScrollTrigger.isTouch !== 1) {
-    // ScrollSmoother.create({
-    //   smooth: 1,
-    //   effects: true,
-    // });
 
     gsap.fromTo(
       '.usb_img',

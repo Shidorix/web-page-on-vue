@@ -3,51 +3,11 @@
     <div class="line" />
   </div>
 
-  <div class="col-12 row justify-center items-center container">
+  <div class="col-12 row justify-center items-center container gallery">
     <div class="col-12 col-lg-6 justify-center row">
-      <img src="../../assets/image/cat1.png" alt="" />
-    </div>
-
-    <div class="col-12 col-lg-6 justify-center row">
-      <div class="description-card-left__text">
-        <div class="description-card-left__metka text-subtitle4">Features</div>
-
-        <h3 class="text-h3">
-          Fast installation of any OS without a USB flash drive
-        </h3>
-
-        <p class="text-subtitle5 q-pt-md">
-          Technical skills, design, business understanding, ability to put
-          themselves in the merchant's shoes.
-        </p>
+      <div>
+        <img src="../../assets/image/cat1.png" alt="" />
       </div>
-    </div>
-  </div>
-
-  <div class="col-12 row justify-center items-center container grid-container-right">
-    <div class="col-12 col-lg-6 row justify-center grid-item">
-      <div class="description-card-right__text">
-        <div class="description-card-right__metka text-subtitle4">Features</div>
-
-        <h3 class="text-h3">
-          Fast installation of any OS without a USB flash drive
-        </h3>
-
-        <p class="text-subtitle5 q-pt-md">
-          Technical skills, design, business understanding, ability to put
-          themselves in the merchant's shoes.
-        </p>
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-6 row justify-center grid-item">
-      <img src="../../assets/image/cat1.png" alt="" />
-    </div>
-  </div>
-
-  <div class="col-12 row justify-center items-center container">
-    <div class="col-12 col-lg-6 justify-center row">
-      <img src="../../assets/image/cat1.png" alt="" />
     </div>
 
     <div class="col-12 col-lg-6 justify-center row">
@@ -66,7 +26,9 @@
     </div>
   </div>
 
-  <div class="col-12 row justify-center items-center container grid-container-right">
+  <div
+    class="col-12 row justify-center items-center container gallery grid-container-right"
+  >
     <div class="col-12 col-lg-6 row justify-center grid-item">
       <div class="description-card-right__text">
         <div class="description-card-right__metka text-subtitle4">Features</div>
@@ -83,11 +45,112 @@
     </div>
 
     <div class="col-12 col-lg-6 row justify-center grid-item">
-      <img src="../../assets/image/cat1.png" alt="" />
+      <div>
+        <img src="../../assets/image/cat1.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 row justify-center items-center container gallery">
+    <div class="col-12 col-lg-6 justify-center row">
+      <div>
+        <img src="../../assets/image/cat1.png" alt="" />
+      </div>
     </div>
 
+    <div class="col-12 col-lg-6 justify-center row">
+      <div class="description-card-left__text">
+        <div class="description-card-left__metka text-subtitle4">Features</div>
+
+        <h3 class="text-h3">
+          Fast installation of any OS without a USB flash drive
+        </h3>
+
+        <p class="text-subtitle5 q-pt-md">
+          Technical skills, design, business understanding, ability to put
+          themselves in the merchant's shoes.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="col-12 row justify-center items-center container gallery grid-container-right"
+  >
+    <div class="col-12 col-lg-6 row justify-center grid-item">
+      <div class="description-card-right__text">
+        <div class="description-card-right__metka text-subtitle4">Features</div>
+
+        <h3 class="text-h3">
+          Fast installation of any OS without a USB flash drive
+        </h3>
+
+        <p class="text-subtitle5 q-pt-md">
+          Technical skills, design, business understanding, ability to put
+          themselves in the merchant's shoes.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 row justify-center grid-item">
+      <div>
+        <img src="../../assets/image/cat1.png" alt="" />
+      </div>
+    </div>
   </div>
 </template>
+
+<script setup>
+import { onMounted } from 'vue';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+onMounted(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  console.log('Animating information');
+
+  if (ScrollTrigger.isTouch !== 1) {
+    let itemsL = gsap.utils.toArray('.gallery > div:nth-child(odd) > div');
+
+    itemsL.forEach((item) => {
+      gsap.fromTo(
+        item,
+        { opacity: 0, x: -50 },
+        {
+          opacity: 1,
+          x: 0,
+          scrollTrigger: {
+            trigger: item,
+            start: 'top bottom',
+            end: 'center center',
+            scrub: true,
+          },
+        }
+      );
+    });
+
+    let itemsR = gsap.utils.toArray('.gallery > div:nth-child(even) > div');
+
+    itemsR.forEach((item) => {
+      gsap.fromTo(
+        item,
+        { opacity: 0, x: 50 },
+        {
+          opacity: 1,
+          x: 0,
+          scrollTrigger: {
+            trigger: item,
+            start: 'top bottom',
+            end: 'center center',
+            scrub: true,
+          },
+        }
+      );
+    });
+  }
+});
+</script>
 
 <style scoped lang="scss">
 img {
@@ -150,7 +213,6 @@ img {
 }
 
 @media only screen and (max-width: 1439px) {
-
   img {
     padding-bottom: 5%;
   }
