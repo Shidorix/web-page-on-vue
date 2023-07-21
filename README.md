@@ -2,9 +2,9 @@
 
 ![image](https://github.com/alphaprojectteam/web-page/assets/64258371/8556566c-20a6-461a-b6f5-94c7ccc31dab)
 
+A Web-Page for WindowsWithoutUSBProject(DanIso)
 
-
-A Quasar Project
+Builded on Vue, Quasar, GSAP and other things
 
 ## Install the dependencies
 ```bash
