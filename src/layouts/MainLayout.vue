@@ -25,3 +25,7 @@ import setupScroll from '../sdk/animations/setupScroll';
 
 setupScroll();
 </script>
+
+<style>
+
+</style>

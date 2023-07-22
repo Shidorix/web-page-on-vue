@@ -36,7 +36,7 @@
 
 <style lang="scss" scoped>
 .footer-wrapper {
-  background-color: #6c9aa9;
+  background-color: #4b717e;
 }
 .footer-wrapper__header {
   padding: 5% 0 5% 0;

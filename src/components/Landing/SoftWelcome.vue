@@ -1,5 +1,5 @@
 <template>
-  <body style="color: white" class="body-section">
+  <body style="color: white">
     <div class="justify-center items-center column main-text">
       <h1 class="text-h1">DanIso</h1>
       <p class="text-subtitle1">Install OS without USB</p>
@@ -105,14 +105,13 @@ button {
   height: 52px;
   flex-shrink: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  
+
   transition: transform 0.3s;
 }
 
 button:hover {
   transform: scale(1.1);
 }
-
 
 img {
   width: calc((1vw + 1vh) * 34);

@@ -1,7 +1,8 @@
 <template>
   <q-page style="overflow-x: hidden">
+    
     <main>
-      <soft-welcome />
+      <soft-welcome/>
       <soft-description/>
       <soft-information />
       <soft-discord />
