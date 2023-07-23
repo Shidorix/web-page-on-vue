@@ -1,13 +1,13 @@
 <template>
   <q-header class="headerLayout" reveal :reveal-offset="350">
     <q-toolbar>
-      <div class="row items-center justify-around full-width q-py-sm">
-        <div class="row items-center">
+      <div class="row items-center full-width q-py-sm flex justify-between">
+        <div class="row items-center justify-center col-2">
           <img src="../../assets/logos/logo.svg" alt="" />
           <p class="q-pl-md text-h4-for-logo">DanIso</p>
         </div>
 
-        <div class="col-6 row justify-center no-wrap">
+        <div class=" row justify-center no-wrap flex">
           <q-btn flat no-caps style="color: #ffffff" class="text-subtitle4-for-header">
             <a class="q-px-xl">About</a>
           </q-btn>
@@ -21,7 +21,7 @@
           </q-btn>
         </div>
 
-        <div>
+        <div class="col-2 row justify-center items-center">
           <q-btn
             class="btn"
             outline
@@ -35,17 +35,6 @@
 </template>
 
 <script>
-import { ref } from 'vue';
-
-export default {
-  setup() {
-    const leftDrawerOpen = ref(false);
-
-    return {
-      leftDrawerOpen,
-    };
-  },
-};
 </script>
 
 <style lang="scss" scoped>
@@ -61,10 +50,5 @@ export default {
 
 p {
   margin: 0;
-}
-
-a {
-}
-a:hover {
 }
 </style>
