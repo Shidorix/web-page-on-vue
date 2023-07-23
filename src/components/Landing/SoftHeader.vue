@@ -1,22 +1,37 @@
 <template>
-  <q-header class="headerLayout" reveal :reveal-offset="350">
+  <q-header class="headerLayout row justify-center items-center" reveal :reveal-offset="350">
     <q-toolbar>
       <div class="row items-center full-width q-py-sm flex justify-between">
-        <div class="row items-center justify-center col-2">
+        <div class="row items-center justify-center col-2 no-wrap">
           <img src="../../assets/logos/logo.svg" alt="" />
           <p class="q-pl-md text-h4-for-logo">DanIso</p>
         </div>
 
-        <div class=" row justify-center no-wrap flex">
-          <q-btn flat no-caps style="color: #ffffff" class="text-subtitle4-for-header">
+        <div class="row justify-center no-wrap flex">
+          <q-btn
+            flat
+            no-caps
+            style="color: #ffffff"
+            class="text-subtitle4-for-header"
+          >
             <a class="q-px-xl">About</a>
           </q-btn>
 
-          <q-btn flat no-caps style="color: #ffffff" class="text-subtitle4-for-header">
+          <q-btn
+            flat
+            no-caps
+            style="color: #ffffff"
+            class="text-subtitle4-for-header"
+          >
             <a class="q-px-xl">Docs</a>
           </q-btn>
 
-          <q-btn flat no-caps style="color: #ffffff" class="text-subtitle4-for-header">
+          <q-btn
+            flat
+            no-caps
+            style="color: #ffffff"
+            class="text-subtitle4-for-header"
+          >
             <a class="q-px-xl">Price</a>
           </q-btn>
         </div>
@@ -34,13 +49,13 @@
   </q-header>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style lang="scss" scoped>
 .headerLayout {
   // background: #6c9aa9;
   background: #4b717e;
+  height: calc((1vw + 1vh) * 4.5);
 }
 
 .btn {
@@ -51,4 +66,10 @@
 p {
   margin: 0;
 }
+
+// @media only screen and (max-width: 1117px) {
+//   p {
+//     padding: 0px;
+//   }
+// }
 </style>

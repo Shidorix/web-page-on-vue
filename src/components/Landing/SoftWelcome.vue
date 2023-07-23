@@ -101,8 +101,8 @@ button {
   border-radius: 64px;
   border: 2px solid #f1eadc;
   background: #f1eadc;
-  width: 180px;
-  height: 52px;
+  min-width: 230px;
+  min-height: 58px;
   flex-shrink: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
