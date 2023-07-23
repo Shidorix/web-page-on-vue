@@ -55,7 +55,6 @@
 .headerLayout {
   // background: #6c9aa9;
   background: #4b717e;
-  height: calc((1vw + 1vh) * 4.5);
 }
 
 .btn {
