@@ -13,7 +13,7 @@
         </q-page-container>
 
         <MainFooter />
-        <q-page-sticky
+        <!-- <q-page-sticky
           position="bottom-right"
           :offset="[18, 18]"
           v-show="scrolled"
@@ -24,7 +24,7 @@
             icon="expand_less"
             @click="scrollToTop"
           />
-        </q-page-sticky>
+        </q-page-sticky> -->
       </q-layout>
     </div>
   </div>
@@ -34,24 +34,26 @@
 import MainHeader from '../components/Landing/SoftHeader.vue';
 import MainFooter from '../components/Landing/SoftFooter.vue';
 import setupScroll from '../sdk/animations/setupScroll';
-import { onMounted, ref } from 'vue';
-import { gsap } from 'gsap';
 
-const scrolled = ref(false);
+setupScroll();
+// import { onMounted, ref } from 'vue';
+// import { gsap } from 'gsap';
 
-const smoother = setupScroll();
+// const scrolled = ref(false);
 
-onMounted(() => {
-  const smootherContainer = smoother.wrapper;
-  smootherContainer.addEventListener('scroll', () => {
-    scrolled.value = smootherContainer.scrollTop > 100;
-  });
-});
+// const smoother = setupScroll();
 
-const scrollToTop = () => {
-  const smootherContainer = smoother.container;
-  gsap.to(smootherContainer, { duration: 0.5, scrollTo: 0 });
-};
+// onMounted(() => {
+//   const smootherContainer = smoother.wrapper;
+//   smootherContainer.addEventListener('scroll', () => {
+//     scrolled.value = smootherContainer.scrollTop > 100;
+//   });
+// });
+
+// const scrollToTop = () => {
+//   const smootherContainer = smoother.container;
+//   gsap.to(smootherContainer, { duration: 0.5, scrollTo: 0 });
+// };
 </script>
 
 <style></style>

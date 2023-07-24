@@ -120,11 +120,13 @@ img {
   position: absolute;
   left: 10%;
   top: 1%;
+  z-index: 1;
 }
 
 .circle2 {
   position: absolute;
   left: 86%;
   top: 3.8%;
+  z-index: 1;
 }
 </style>

@@ -99,13 +99,5 @@ onMounted(() => {
   z-index: 2;
 }
 
-@media only screen and (max-width: 1439px) {
-  .grid-item-custom {
-    align-items: center;
-    padding-left: 0px;
-  }
-  .first-text {
-    width: 55%;
-  }
-}
+@import '../../css/media/mediaSoftDescription.scss';
 </style>

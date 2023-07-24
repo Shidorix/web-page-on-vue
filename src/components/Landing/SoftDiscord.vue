@@ -20,6 +20,8 @@
 <script setup></script>
 
 <style scoped lang="scss">
+
+
 .discord-card {
   padding-top: 280px;
 }
@@ -53,16 +55,5 @@ button:hover {
   transform: scale(1.1);
 }
 
-@media only screen and (max-width: 1200px) {
-  .discord-card__text {
-    width: 85%;
-    padding-left: 0px;
-    padding-top: 55px;
-    padding-right: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
+@import '../../css/media/mediaSoftDiscord.scss';
 </style>

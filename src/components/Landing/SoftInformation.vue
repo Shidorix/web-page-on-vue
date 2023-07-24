@@ -5,7 +5,7 @@
 
   <div class="col-12 row justify-center items-center container gallery">
     <div class="col-12 col-lg-6 justify-center row">
-      <div>
+      <div class="row justify-center">
         <img src="../../assets/image/cat1.png" alt="" />
       </div>
     </div>
@@ -29,7 +29,7 @@
   <div
     class="col-12 row justify-center items-center container gallery grid-container-right"
   >
-    <div class="col-12 col-lg-6 row justify-center grid-item">
+    <div class="col-12 col-lg-6 row justify-center items-center grid-item">
       <div class="description-card-right__text">
         <div class="description-card-right__metka text-subtitle4">Features</div>
 
@@ -45,7 +45,7 @@
     </div>
 
     <div class="col-12 col-lg-6 row justify-center grid-item">
-      <div>
+      <div class="row justify-center">
         <img src="../../assets/image/cat1.png" alt="" />
       </div>
     </div>
@@ -53,7 +53,7 @@
 
   <div class="col-12 row justify-center items-center container gallery">
     <div class="col-12 col-lg-6 justify-center row">
-      <div>
+      <div class="row justify-center">
         <img src="../../assets/image/cat1.png" alt="" />
       </div>
     </div>
@@ -93,7 +93,7 @@
     </div>
 
     <div class="col-12 col-lg-6 row justify-center grid-item">
-      <div>
+      <div class="row justify-center">
         <img src="../../assets/image/cat1.png" alt="" />
       </div>
     </div>
@@ -178,6 +178,9 @@ img {
 }
 
 .description-card-left__metka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   left: 10px;
   margin-bottom: 5px;
@@ -186,7 +189,6 @@ img {
   width: 120px;
   height: 30px;
   flex-shrink: 0;
-  padding-top: 3px;
   text-align: center;
 }
 
@@ -200,6 +202,9 @@ img {
 }
 
 .description-card-right__metka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   left: 10px;
   margin-bottom: 5px;
@@ -212,16 +217,5 @@ img {
   text-align: center;
 }
 
-@media only screen and (max-width: 1439px) {
-  img {
-    padding-bottom: 5%;
-  }
-
-  .grid-container-right .grid-item:nth-child(1) {
-    order: 2;
-  }
-  .grid-container-right .grid-item:nth-child(2) {
-    order: 1;
-  }
-}
+@import '../../css/media/mediaSoftInformation.scss';
 </style>

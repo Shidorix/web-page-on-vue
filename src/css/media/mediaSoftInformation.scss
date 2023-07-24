@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1439px) {
+  img {
+    padding-bottom: 5%;
+  }
+
+  .grid-container-right .grid-item:nth-child(1) {
+    order: 2;
+  }
+  .grid-container-right .grid-item:nth-child(2) {
+    order: 1;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  img {
+    width: 75%;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .description-card-left__metka {
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .description-card-right__metka {
+    width: 60px;
+    height: 20px;
+    font-size: 10px;
+  }
+}

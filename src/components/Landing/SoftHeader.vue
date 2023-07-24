@@ -66,9 +66,4 @@ p {
   margin: 0;
 }
 
-// @media only screen and (max-width: 1117px) {
-//   p {
-//     padding: 0px;
-//   }
-// }
 </style>
