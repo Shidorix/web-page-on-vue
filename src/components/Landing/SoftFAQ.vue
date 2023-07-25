@@ -61,6 +61,11 @@ const state = reactive({
 </script>
 
 <style lang="scss" scoped>
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
 .container {
   padding-top: 300px;
   padding-bottom: 300px;
@@ -75,10 +80,13 @@ const state = reactive({
 }
 
 .faq-card__text {
-  width: 45%;
+  min-width: 45%;
 }
 
 .faq-card__metka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   left: 10px;
   margin-bottom: 5px;
@@ -90,4 +98,6 @@ const state = reactive({
   padding-top: 3px;
   text-align: center;
 }
+
+@import '../../css/media/mediaSoftFAQ.scss'
 </style>

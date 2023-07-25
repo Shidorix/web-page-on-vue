@@ -129,4 +129,6 @@ img {
   top: 3.8%;
   z-index: 1;
 }
+
+@import '../../css/media//mediaSoftWelcome.scss'
 </style>

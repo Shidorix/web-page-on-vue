@@ -17,8 +17,8 @@
       </p>
     </div>
 
-    <div class="column justify-center items-center">
-      <div class="column col-12 col-lg-3">
+    <div class="column justify-center items-center first-img_wrapper">
+      <div class="column col-12 col-lg-3 justify-center items-center">
         <img class="usb_img" src="../../assets/image/usb2.svg" alt="" />
         <img class="trash_img" src="../../assets/image/trash.svg" alt="" />
       </div>
@@ -68,6 +68,11 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
 .grid-item-custom {
   display: flex;
   justify-content: center;
@@ -79,6 +84,9 @@ onMounted(() => {
 }
 
 .first-text__metka {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   left: 10px;
   margin-bottom: 5px;

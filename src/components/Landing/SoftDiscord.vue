@@ -21,7 +21,10 @@
 
 <style scoped lang="scss">
 
-
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
 .discord-card {
   padding-top: 280px;
 }

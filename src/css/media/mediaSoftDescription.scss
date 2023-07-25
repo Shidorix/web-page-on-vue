@@ -1,9 +1,51 @@
 @media only screen and (max-width: 1439px) {
-    .grid-item-custom {
-      align-items: center;
-      padding-left: 0px;
-    }
-    .first-text {
-      min-width: 75%;
-    }
+  .grid-item-custom {
+    // align-items: center;
+    padding-left: 0%;
   }
+  .first-text {
+    min-width: 85%;
+  }
+  // .usb_img {
+  //   position: relative;
+  //   top: 50%;
+  //   transform: translateY(70%);
+  // }
+  // .first-img_wrapper {
+  //   position: relative;
+  //   top: 50%;
+  //   transform: translateY(-20%);
+  // }
+  .first-img_wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  img {
+    width: 75%;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  p {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .first-text__description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .text-h1-for-number{
+    font-size: 60px;
+    line-height: 60px !important;
+  }
+  .first-text__metka {
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+}
