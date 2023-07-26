@@ -63,8 +63,8 @@ const state = reactive({
 <style lang="scss" scoped>
 
 img {
-  max-width: 100% !important;
-  height: auto !important;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   padding-top: 300px;

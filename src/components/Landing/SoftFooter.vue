@@ -4,20 +4,20 @@
       class="row items-center justify-around no-wrap fit q-pt-md headerLayout footer-wrapper__header"
       style="color: white"
     >
-      <div class="row items-center">
-        <img src="../../assets/logos/logo.svg" alt="" />
-        <p class="q-pl-md text-h4-for-logo">DanIso</p>
-      </div>
-
       <div class="col-6 row justify-center no-wrap">
-        <a class="q-px-xl text-subtitle2">About</a>
-        <a class="q-px-xl text-subtitle2">Services</a>
-        <a class="q-px-xl text-subtitle2">Pricing</a>
+        <a class="q-px-xl text-subtitle4">About</a>
+        <a class="q-px-xl text-subtitle4">Services</a>
+        <a class="q-px-xl text-subtitle4">Pricing</a>
       </div>
     </div>
 
     <div class="justify-center row">
       <hr class="footer-line" />
+    </div>
+
+    <div class="row items-center justify-center q-pt-lg">
+      <img src="../../assets/logos/logo.svg" alt="" />
+      <p class="q-pl-md text-h4-for-logo">DanIso</p>
     </div>
 
     <div class="row justify-around q-py-xl">
@@ -26,9 +26,15 @@
       </p>
 
       <div>
-        <a href="#" class="q-px-sm"><img src="../../assets/image/tg.svg" alt="" /></a>
-        <a href="#" class="q-px-sm"><img src="../../assets/image/tw.svg" alt="" /></a>
-        <a href="#" class="q-px-sm"><img src="../../assets/image/fb.svg" alt="" /></a>
+        <a href="#" class="q-px-sm"
+          ><img src="../../assets/image/tg.svg" alt=""
+        /></a>
+        <a href="#" class="q-px-sm"
+          ><img src="../../assets/image/tw.svg" alt=""
+        /></a>
+        <a href="#" class="q-px-sm"
+          ><img src="../../assets/image/fb.svg" alt=""
+        /></a>
       </div>
     </div>
   </section>
@@ -54,4 +60,6 @@
 p {
   margin: 0;
 }
+
+@import '../../css/media//mediaSoftFooter.scss';
 </style>

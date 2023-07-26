@@ -1,0 +1,9 @@
+@media only screen and (max-width: 560px) {
+  .footer-wrapper div:nth-child(1) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-wrapper div:nth-child(1) > a {
+    padding-bottom: 15px;
+  }
+}
