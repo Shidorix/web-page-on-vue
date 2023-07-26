@@ -6,8 +6,8 @@
       <button class="text-subtitle3">Download DanIso</button>
     </div>
 
-    <circleVue class="circle1" data-speed="0.5" />
-    <circleVue class="circle2" data-speed="0.5" />
+    <img src="../../assets/image/circle.svg" class="circle1" data-speed="0.5" />
+    <img src="../../assets/image/circle.svg" class="circle2" data-speed="0.5" />
 
     <div class="q-pt-xl row justify-center main-pic">
       <div>
@@ -26,7 +26,6 @@
 </template>
 
 <script setup>
-import circleVue from '../../composables/SoftCircle.vue';
 import { onMounted } from 'vue';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -119,15 +118,19 @@ img {
 .circle1 {
   position: absolute;
   left: 10%;
-  top: 1%;
+  top: 0.5%;
   z-index: 1;
+  max-width: 8% !important;
+  height: auto !important;
 }
 
 .circle2 {
   position: absolute;
   left: 86%;
-  top: 3.8%;
+  top: 4.5%;
   z-index: 1;
+  max-width: 8% !important;
+  height: auto !important;
 }
 
 @import '../../css/media//mediaSoftWelcome.scss'
