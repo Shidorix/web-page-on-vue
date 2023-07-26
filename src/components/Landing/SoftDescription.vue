@@ -24,7 +24,8 @@
       </div>
     </div>
 
-    <div class="grid-item-custom-wrapper">
+    <!-- Add a wrapper element around the text block -->
+    <div class="col-12 col-lg-3 grid-item-custom-wrapper">
       <div class="grid-item-custom">
         <p class="text-h4">
           <span class="text-h1-for-number q-pr-md">1</span>
