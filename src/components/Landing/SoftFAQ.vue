@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-center container items-center flex-wrap col-12">
-    <div class="faq-card__text q-pb-xl q-pl-xl col-12 col-lg-3">
+  <div class="row justify-center container flex-wrap col-12" >
+    <div class="faq-card__text q-pl-xl col-12 col-lg-3">
       <div class="faq-card__metka text-subtitle4">Features</div>
 
       <h3 class="text-h3">
@@ -69,6 +69,8 @@ img {
 .container {
   padding-top: 300px;
   padding-bottom: 300px;
+  display: flex;
+  align-items: flex-start;
 }
 .faq-wrapper {
   border-radius: 12px 12px 12px 12px;
@@ -81,6 +83,7 @@ img {
 
 .faq-card__text {
   min-width: 45%;
+  padding-top: 15%;
 }
 
 .faq-card__metka {
