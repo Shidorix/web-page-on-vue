@@ -24,17 +24,19 @@
       </div>
     </div>
 
-    <div class="column col-12 col-lg-3 grid-item-custom">
-      <p class="text-h4">
-        <span class="text-h1-for-number q-pr-md">1</span>
-        <span style="padding-left: 20px">Download ISO</span>
-      </p>
-      <p class="text-h4">
-        <span class="text-h1-for-number q-pr-md">2</span> Add into DanIso
-      </p>
-      <p class="text-h4">
-        <span class="text-h1-for-number q-pr-md">3</span> Done
-      </p>
+    <div class="grid-item-custom-wrapper">
+      <div class="grid-item-custom">
+        <p class="text-h4">
+          <span class="text-h1-for-number q-pr-md">1</span>
+          <span style="padding-left: 20px">Download ISO</span>
+        </p>
+        <p class="text-h4">
+          <span class="text-h1-for-number q-pr-md">2</span> Add into DanIso
+        </p>
+        <p class="text-h4">
+          <span class="text-h1-for-number q-pr-md">3</span> Done
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -68,14 +70,17 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-
 img {
   max-width: 100% !important;
   height: auto !important;
 }
-.grid-item-custom {
+
+.grid-item-custom-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.grid-item-custom {
   white-space: nowrap;
 }
 
@@ -106,6 +111,5 @@ img {
 .trash_img {
   z-index: 2;
 }
-
 @import '../../css/media/mediaSoftDescription.scss';
 </style>
