@@ -97,7 +97,7 @@
         </q-item>
 
         <div class="row justify-center q-mt-md">
-          <q-btn class="btn" outline style="color: #4b717e" label="LOGIN" />
+          <q-btn class="q-item_btn" outline style="color: #4b717e" label="LOGIN" />
         </div>
       </q-list>
     </q-drawer>
@@ -117,6 +117,11 @@
   height: 50px;
 }
 
+.q-item_btn {
+  width: 150px;
+  height: 50px;
+}
+
 .burger-menu-button {
   display: none;
 }
@@ -125,7 +130,7 @@
   border-radius: 0 32px 32px 0;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
   .burger-menu-button {
     display: block;
   }
@@ -133,6 +138,9 @@
   .text-subtitle4-for-header,
   .btn {
     display: none;
+  }
+  .headerLayout .col-2 {
+    width: auto;
   }
 }
 
